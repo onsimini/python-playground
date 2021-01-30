@@ -1,0 +1,31 @@
+# python_playground/.github/workflows/README_update_workflow.yml
+name: README every day update workflow                                              
+on:
+#   push:
+#     branches:
+#       -  README_update_workflow
+  schedule:
+    - cron:  '* * */1 * *'        
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+                                          
+jobs:                         
+  first-job:                           
+    name: list repo                           
+    runs-on: ubuntu-latest                           
+    steps:                           
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Setup Python Environment
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Run a one-line script
+      run: python --version
+
+
+#       # Runs a set of commands using the runners shell
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.
