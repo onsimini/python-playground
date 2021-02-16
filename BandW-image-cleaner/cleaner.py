@@ -11,3 +11,5 @@ for y in range(len(img)):
             img[y, x] = [255, 255, 255]
 
 cv2.imwrite('cleaned.jpg', img)
+
+# to test commit template
