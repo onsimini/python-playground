@@ -1,6 +1,6 @@
 # python-playground
 
-## My Python playground, to play and test Python.
+## My Python playground, to play, learn and test Python and python base app.
 
 ### List of folders:
 
