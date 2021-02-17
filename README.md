@@ -1,4 +1,4 @@
-# python_playground
+# python-playground
 
 ## My Python playground, to play and test Python.
 
